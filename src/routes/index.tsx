@@ -63,10 +63,10 @@ const CRIADORA = { nome: "", bio: "" }; // TODO: preencha [NOME_E_CREF] e bio; v
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BUMBUM PRO MAX — Treino de glúteos para mulheres" },
-      { name: "description", content: "Treino completo de glúteos feito só para mulheres. Aumente e defina o seu bumbum em 1 mês. +8 mil alunas." },
-      { property: "og:title", content: "BUMBUM PRO MAX — Aumente e defina o seu bumbum em 1 mês" },
-      { property: "og:description", content: "Treino completo de glúteos 100% para mulheres. Planos a partir de R$ 29,90." },
+      { title: "BUMBUM PRO MAX — Treino de glúteos e perda de gordura corporal" },
+      { name: "description", content: "Treino completo de glúteos e queima de gordura corporal feito só para mulheres. Aumente e defina o seu bumbum em 1 mês. +8 mil alunas." },
+      { property: "og:title", content: "BUMBUM PRO MAX — Aumente o bumbum e perca gordura corporal" },
+      { property: "og:description", content: "Treino completo de glúteos e perda de gordura 100% para mulheres. Planos a partir de R$ 29,90." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       // TODO: og:image com URL absoluta da logo, quando publicada
@@ -187,6 +187,7 @@ function useSnapIndex() {
 const PLAN_TRIMESTRAL_ITEMS = [
   "Treino completo de glúteos",
   "Foco em aumentar e definir",
+  "Aceleração da queima de gordura corporal",
   "Feito 100% para mulheres",
   "Desafio 21 dias para testar seus limites e te preparar para o treino",
 ];
@@ -194,6 +195,7 @@ const PLAN_TRIMESTRAL_ITEMS = [
 const PLAN_ANUAL_ITEMS = [
   "Treino completo de glúteos",
   "Foco em aumentar e definir",
+  "Aceleração da queima de gordura corporal",
   "Feito 100% para mulheres",
   "Desafio 21 dias para testar seus limites e te preparar para o treino",
   "Treino em casa para quando estiver em viagem ou não tiver acesso à academia",
@@ -216,7 +218,7 @@ function Index() {
   }, []);
 
   const h1 = [["AUMENTE", 0], ["E", 0], ["DEFINA", 0], ["O", 0], ["SEU", 0], ["BUMBUM", 1], ["EM", 0], ["1 MÊS", 1]] as const;
-  const marquee = "+8 MIL ALUNAS • TREINO COMPLETO DE GLÚTEOS • AUMENTE E DEFINA EM 1 MÊS • 100% PARA MULHERES • ";
+  const marquee = "+8 MIL ALUNAS • TREINO DE GLÚTEOS & PERDA DE GORDURA • AUMENTE E DEFINA EM 1 MÊS • 100% PARA MULHERES • ";
 
   return (
     <div className="pb-20 md:pb-0">
@@ -232,13 +234,16 @@ function Index() {
         {/* 2. Hero */}
         <section ref={heroRef} className="mx-auto grid max-w-[1120px] gap-8 overflow-x-clip px-4 pt-24 pb-14 md:grid-cols-2 md:items-center md:pt-32">
           <div>
-            <span className="sticker">100% para mulheres</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="sticker">100% para mulheres</span>
+              <span className="sticker !border-pink/40 !bg-pink/20 !text-ink">Glúteos & Queima de Gordura</span>
+            </div>
             <h1 className="mt-4 text-[2.6rem] sm:text-6xl md:text-7xl">
               {h1.map(([w, pink], i) => (
                 <span key={i} className={`word-up mr-[0.2em] ${pink ? "text-pink" : ""}`} style={{ animationDelay: `${i * 70}ms` }}>{w}</span>
               ))}
             </h1>
-            <p className="mt-4 max-w-md text-lg">Treino completo de glúteos, pensado do zero para o corpo feminino. Você treina com foco e evolui com constância.</p>
+            <p className="mt-4 max-w-md text-lg">Treino completo focado em glúteos e perda de gordura corporal, pensado do zero para o corpo feminino. Você treina com foco e evolui com constância.</p>
             <p className="mt-4 text-lg"><strong className="font-display text-2xl"><Counter /></strong> alunas focadas com a gente</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a href="#planos" className="btn-pink">Quero meu treino</a>
@@ -275,7 +280,12 @@ function Index() {
           <Reveal>
             <h2 className="text-4xl md:text-6xl">É PRA <span className="text-pink">VOCÊ</span> SE...</h2>
             <ul className="mt-8 grid gap-4 md:grid-cols-2">
-              {["Você quer aumentar e definir o bumbum", "Cansou de treino solto, sem evolução", "Quer um plano organizado para seguir", "Quer foco total em glúteos"].map((t) => (
+              {[
+                "Você quer aumentar e definir o bumbum",
+                "Quer perder gordura corporal e secar mantendo as curvas",
+                "Cansou de treino solto, sem evolução",
+                "Quer um plano organizado para seguir com constância",
+              ].map((t) => (
                 <li key={t} className="flex items-center gap-3 rounded-2xl border-2 border-ink bg-card p-4 text-lg font-semibold"><Check />{t}</li>
               ))}
             </ul>
@@ -293,7 +303,7 @@ function Index() {
                   ["Treino completo de glúteos", "Do aquecimento à finalização, tudo pensado para glúteos.", "M4 18h16M7 18V9m5 9V5m5 13v-6"],
                   ["Aumentar e definir", "Estímulos certos para ganhar volume e forma.", "M4 16l5-5 4 4 7-7M14 8h6v6"],
                   ["Feito para mulheres", "Criado para o corpo e a rotina feminina.", "M12 14a5 5 0 100-10 5 5 0 000 10zm0 0v7m-3-3h6"],
-                  ["[EDITAR]", "[EDITAR] descreva aqui um benefício real do curso.", "M12 4v16M4 12h16"],
+                  ["Perda de gordura corporal", "Não é só para glúteo! Estímulos intensos que aceleram o metabolismo e queimam gordura corporal para secar e desenhar o shape.", "M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z"],
                 ].map(([t, d, icon]) => (
                   <div key={t} className="rounded-3xl border-2 border-cream/20 p-6">
                     <svg viewBox="0 0 24 24" className="h-10 w-10 fill-none stroke-pink" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={icon} /></svg>
@@ -450,7 +460,8 @@ function Index() {
           <h2 className="text-4xl md:text-6xl">DÚVIDAS <span className="text-pink">FREQUENTES</span></h2>
           <div className="mt-8 space-y-3">
             {[
-              ["Para quem é o BUMBUM PRO MAX?", "Para mulheres que querem aumentar e definir o bumbum com um treino completo e organizado de glúteos."],
+              ["O treino é apenas para glúteos?", "Não! Embora o foco principal seja aumentar e empinar o bumbum, o treino foi projetado com intensidade metabólica para acelerar a queima calórica e a perda de gordura corporal, ajudando a secar e definir o corpo como um todo."],
+              ["Para quem é o BUMBUM PRO MAX?", "Para mulheres que querem aumentar e definir o bumbum e também queimar gordura corporal com um treino completo e organizado."],
               ["Em quanto tempo vejo resultado?", "O treino foi pensado para 1 mês de evolução, mas cada corpo responde de um jeito. Constância, alimentação e descanso fazem diferença."],
               ["Preciso de academia?", "O plano anual inclui treinos completos para academia e também treinos em casa (perfeito para viagens ou dias em que você não puder ir à academia). O plano trimestral é focado no treino de academia + Desafio 21 dias."],
               ["Qual a diferença entre o trimestral e o anual?", "O trimestral tem 3 meses de acesso e inclui o Desafio 21 dias. O anual tem 12 meses de acesso, inclui o Desafio 21 dias e ainda conta com o Treino em Casa exclusivo para quando você estiver viajando ou sem acesso à academia."],
