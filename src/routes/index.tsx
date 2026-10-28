@@ -6,13 +6,52 @@ import resultado2 from "@/assets/resultados/resultado-2.jpg";
 import resultado3 from "@/assets/resultados/resultado-3.jpg";
 import resultado4 from "@/assets/resultados/resultado-4.png";
 import resultado5 from "@/assets/resultados/resultado-5.png";
+import resultado6 from "@/assets/resultados/resultado-6.jpg";
+import resultado7 from "@/assets/resultados/resultado-7.jpg";
 
 const RESULTADOS = [
-  { src: resultado1, alt: "Evolução aluna - 11 de agosto a 22 de outubro" },
-  { src: resultado2, alt: "Evolução aluna - Antes e depois +8 cm de glúteos" },
-  { src: resultado3, alt: "Evolução aluna - Antes e depois treino de glúteos" },
-  { src: resultado4, alt: "Evolução aluna - Antes e depois na academia" },
-  { src: resultado5, alt: "Evolução aluna - Antes e depois com aumento e definição" },
+  {
+    src: resultado6,
+    alt: "Evolução aluna - Perca de gordura na barriga, cintura fina e emagrecimento acelerado",
+    badge: "🔥 -10 kg & Cintura Fina",
+    aspect: "aspect-square",
+  },
+  {
+    src: resultado7,
+    alt: "Evolução aluna - Redução drástica de medidas corporais mantendo o bumbum volumoso",
+    badge: "🔥 Queima de Gordura Real",
+    aspect: "aspect-square",
+  },
+  {
+    src: resultado1,
+    alt: "Evolução aluna - 11 de agosto a 22 de outubro",
+    badge: "Evolução 2 meses",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    src: resultado2,
+    alt: "Evolução aluna - Antes e depois +8 cm de glúteos",
+    badge: "+8 cm de glúteos",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    src: resultado3,
+    alt: "Evolução aluna - Antes e depois treino de glúteos",
+    badge: "Definição e volume",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    src: resultado4,
+    alt: "Evolução aluna - Antes e depois na academia",
+    badge: "Antes e depois",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    src: resultado5,
+    alt: "Evolução aluna - Antes e depois com aumento e definição",
+    badge: "Empinado & firme",
+    aspect: "aspect-[4/5]",
+  },
 ];
 
 const DEPOIMENTOS = [
@@ -20,37 +59,37 @@ const DEPOIMENTOS = [
     nome: "Juliana Mendes",
     cidade: "São Paulo, SP",
     tempo: "Aluna há 2 meses",
-    texto: "Treino há 2 anos e nunca tinha sentido o glúteo trabalhar de verdade como agora. Em menos de 40 dias minhas roupas já vestem totalmente diferente. O método de ativação faz toda a diferença!",
+    texto: "Perdi 9,5 kg logo no primeiro mês! Minhas calças passaram do 42 para o 38 e o melhor: meu bumbum não murchou, pelo contrário, empinou e ficou durinho. O método de queima metabólica faz toda a diferença!",
   },
   {
     nome: "Beatriz Cavalcanti",
     cidade: "Belo Horizonte, MG",
     tempo: "Aluna há 3 meses",
-    texto: "Eu achava que só cirurgia dava jeito no meu caso. Segui a planilha certinha e aumentei 5cm de glúteos sem sobrecarregar a lombar. Melhor investimento que já fiz!",
+    texto: "Eu tinha muito medo de emagrecer e ficar sem bumbum. Com o método eliminei 10 kg de pura gordura corporal e aumentei 5 cm de glúteos. Ninguém na academia acredita nessa transformação!",
   },
   {
     nome: "Camila Ribeiro",
     cidade: "Rio de Janeiro, RJ",
     tempo: "Aluna há 1 mês",
-    texto: "O que mais amei é que é direto ao ponto. Não tem enrolação na academia. Você faz as séries certas com foco total em glúteos e sai sentindo queimar de verdade. Nota 10!",
+    texto: "Em 30 dias sequei 8 kg na balança e perdi a gordura da barriga e cintura! O treino queima calorias o dia todo e foca no glúteo sem enrolação. Nota 10!",
   },
   {
     nome: "Larissa Silveira",
     cidade: "Curitiba, PR",
     tempo: "Aluna há 4 meses",
-    texto: "Minha autoestima mudou completamente! O formato do meu bumbum ficou muito mais empinado e firme. Até minhas amigas da academia vieram me perguntar qual treino eu estava fazendo.",
+    texto: "Minha autoestima mudou completamente! Perdi quase 10 kg em um mês, reduzi medidas na cintura e o formato do meu bumbum ficou redondinho e empinado. Até minhas amigas da academia vieram me perguntar qual treino eu estava fazendo.",
   },
   {
     nome: "Fernanda Prado",
     cidade: "Florianópolis, SC",
     tempo: "Aluna há 2 meses",
-    texto: "Tinha muita dificuldade em evoluir glúteos porque minhas coxas sempre roubavam a carga toda. Com os ajustes de postura e as séries combinadas, finalmente vi a evolução acontecer!",
+    texto: "Consegui secar a barriga e perder 7 kg sem ficar flácida. As séries combinadas aceleram o metabolismo de um jeito que você vê a gordura queimar de verdade mantendo as curvas!",
   },
   {
     nome: "Mariana Torres",
     cidade: "Brasília, DF",
     tempo: "Aluna há 3 meses",
-    texto: "A metodologia é sensacional! Treinos intensos, organizados e super fáceis de acompanhar no celular. Já estou no segundo ciclo e não largo mais.",
+    texto: "Menos 10 kg na balança e mais volume nos glúteos! O protocolo de queima metabólica acelerada + treino focado de glúteos é surreal. Treinos fáceis de acompanhar no celular, já estou no segundo ciclo.",
   },
 ];
 
@@ -63,10 +102,10 @@ const CRIADORA = { nome: "", bio: "" }; // TODO: preencha [NOME_E_CREF] e bio; v
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BUMBUM PRO MAX — Treino de glúteos e perda de gordura corporal" },
-      { name: "description", content: "Treino completo de glúteos e queima de gordura corporal feito só para mulheres. Aumente e defina o seu bumbum em 1 mês. +8 mil alunas." },
-      { property: "og:title", content: "BUMBUM PRO MAX — Aumente o bumbum e perca gordura corporal" },
-      { property: "og:description", content: "Treino completo de glúteos e perda de gordura 100% para mulheres. Planos a partir de R$ 29,90." },
+      { title: "BUMBUM PRO MAX — Perca até 10 kg em 1 mês e defina seus glúteos" },
+      { name: "description", content: "Treino completo de queima de gordura e hipertrofia de glúteos feito para mulheres. Perca até 10 kg em um mês, seque a barriga e empine o bumbum. +8 mil alunas." },
+      { property: "og:title", content: "BUMBUM PRO MAX — Perca até 10 kg em 1 mês e aumente o bumbum" },
+      { property: "og:description", content: "Emagreça com queima acelerada de gordura e mantenha as curvas definidas. Perca até 10 kg em 30 dias com o treino Bumbum Pro Max. Planos a partir de R$ 29,90." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       // TODO: og:image com URL absoluta da logo, quando publicada
@@ -185,20 +224,21 @@ function useSnapIndex() {
 }
 
 const PLAN_TRIMESTRAL_ITEMS = [
-  "Treino completo de glúteos",
-  "Foco em aumentar e definir",
-  "Aceleração da queima de gordura corporal",
-  "Feito 100% para mulheres",
-  "Desafio 21 dias para testar seus limites e te preparar para o treino",
+  "Protocolo Perca até 10 kg em 1 mês",
+  "Treino completo de queima acelerada de gordura",
+  "Foco em aumentar, empinar e definir o glúteo",
+  "Feito 100% para o corpo feminino (seque sem perder bumbum)",
+  "Desafio 21 dias de queima extrema e ativação metabólica",
 ];
 
 const PLAN_ANUAL_ITEMS = [
-  "Treino completo de glúteos",
-  "Foco em aumentar e definir",
-  "Aceleração da queima de gordura corporal",
-  "Feito 100% para mulheres",
-  "Desafio 21 dias para testar seus limites e te preparar para o treino",
-  "Treino em casa para quando estiver em viagem ou não tiver acesso à academia",
+  "Protocolo Perca até 10 kg em 1 mês",
+  "Treino completo de queima acelerada de gordura",
+  "Foco em aumentar, empinar e definir o glúteo",
+  "Feito 100% para o corpo feminino (seque sem perder bumbum)",
+  "Desafio 21 dias de queima extrema e ativação metabólica",
+  "Treino em casa queima-gordura (sem precisar de academia)",
+  "12 meses de evolução para secar gordura e manter as curvas firmes",
 ];
 
 function Index() {
@@ -217,8 +257,18 @@ function Index() {
     return () => { io1.disconnect(); io2.disconnect(); };
   }, []);
 
-  const h1 = [["AUMENTE", 0], ["E", 0], ["DEFINA", 0], ["O", 0], ["SEU", 0], ["BUMBUM", 1], ["EM", 0], ["1 MÊS", 1]] as const;
-  const marquee = "+8 MIL ALUNAS • TREINO DE GLÚTEOS & PERDA DE GORDURA • AUMENTE E DEFINA EM 1 MÊS • 100% PARA MULHERES • ";
+  const h1 = [
+    ["PERCA", 0],
+    ["ATÉ", 0],
+    ["10 KG", 1],
+    ["EM", 0],
+    ["1 MÊS", 1],
+    ["E", 0],
+    ["AUMENTE", 0],
+    ["SEU", 0],
+    ["BUMBUM", 1],
+  ] as const;
+  const marquee = "+8 MIL ALUNAS • PERCA ATÉ 10 KG EM 1 MÊS • QUEIMA ACELERADA DE GORDURA & HIPERTROFIA DE GLÚTEOS • SEQUE A BARRIGA E EMPINE O BUMBUM • 100% PARA MULHERES • ";
 
   return (
     <div className="pb-20 md:pb-0">
@@ -235,18 +285,19 @@ function Index() {
         <section ref={heroRef} className="mx-auto grid max-w-[1120px] gap-8 overflow-x-clip px-4 pt-24 pb-14 md:grid-cols-2 md:items-center md:pt-32">
           <div>
             <div className="flex flex-wrap items-center gap-2">
-              <span className="sticker">100% para mulheres</span>
-              <span className="sticker !border-pink/40 !bg-pink/20 !text-ink">Glúteos & Queima de Gordura</span>
+              <span className="sticker !border-pink/60 !bg-pink !text-on-pink font-extrabold">🔥 Perca até 10 kg em 1 mês</span>
+              <span className="sticker">Queima Acelerada de Gordura</span>
+              <span className="sticker !border-pink/40 !bg-pink/20 !text-ink">100% para mulheres</span>
             </div>
-            <h1 className="mt-4 text-[2.6rem] sm:text-6xl md:text-7xl">
+            <h1 className="mt-4 text-[2.4rem] leading-[1.08] sm:text-5xl md:text-6xl lg:text-7xl">
               {h1.map(([w, pink], i) => (
-                <span key={i} className={`word-up mr-[0.2em] ${pink ? "text-pink" : ""}`} style={{ animationDelay: `${i * 70}ms` }}>{w}</span>
+                <span key={i} className={`word-up mr-[0.2em] inline-block ${pink ? "text-pink" : ""}`} style={{ animationDelay: `${i * 65}ms` }}>{w}</span>
               ))}
             </h1>
-            <p className="mt-4 max-w-md text-lg">Treino completo focado em glúteos e perda de gordura corporal, pensado do zero para o corpo feminino. Você treina com foco e evolui com constância.</p>
-            <p className="mt-4 text-lg"><strong className="font-display text-2xl"><Counter /></strong> alunas focadas com a gente</p>
+            <p className="mt-4 max-w-lg text-lg leading-relaxed">Protocolo definitivo de <strong>queima acelerada de gordura corporal</strong> e <strong>aumento de glúteos</strong>. Seque a barriga, perca até 10 kg em 30 dias e conquiste o bumbum empinado e firme — sem dietas malucas e 100% pensado para o corpo feminino.</p>
+            <p className="mt-4 text-lg"><strong className="font-display text-2xl"><Counter /></strong> mulheres queimando gordura e transformando o shape</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a href="#planos" className="btn-pink">Quero meu treino</a>
+              <a href="#planos" className="btn-pink">Quero perder gordura e definir</a>
               <a href="#resultados" className="min-h-[48px] content-center text-center font-semibold underline underline-offset-4">Ver resultados reais</a>
             </div>
           </div>
@@ -255,21 +306,21 @@ function Index() {
             <Curve draw className="absolute -inset-10 h-[calc(100%+5rem)] w-[calc(100%+5rem)]" />
             <img
               src={heroPhoto}
-              alt="Mulher de shorts pretos, de costas, mostrando o bumbum definido em um cenário tropical"
+              alt="Mulher de shorts pretos, de costas, mostrando o bumbum definido e corpo em forma"
               width={668}
               height={1000}
               fetchPriority="high"
               className="relative h-auto w-full rounded-[2rem] border border-ink/15 object-cover"
             />
             <div className="absolute -inset-x-3 -top-8 z-10 -rotate-3 rounded-2xl bg-pink px-4 py-2.5 text-center shadow-[0_8px_24px_-8px_color-mix(in_oklab,var(--pink)_60%,transparent)]">
-              <p className="font-display text-[15px] font-extrabold leading-tight text-balance text-on-pink sm:text-lg">Já sonhou com o bumbum da Virgínia?&nbsp;🍑</p>
-              <p className="mt-0.5 text-sm font-semibold leading-tight text-on-pink/90 sm:text-base">Chegou a sua hora&nbsp;👀</p>
+              <p className="font-display text-[15px] font-extrabold leading-tight text-balance text-on-pink sm:text-lg">Perca até 10 kg & Empine o Bumbum&nbsp;🔥🍑</p>
+              <p className="mt-0.5 text-sm font-semibold leading-tight text-on-pink/90 sm:text-base">Seque a gordura e mantenha as curvas&nbsp;👀</p>
             </div>
           </div>
         </section>
 
         {/* 3. Faixa */}
-        <div className="overflow-hidden bg-ink py-3" aria-label="+8 mil alunas, treino completo de glúteos, aumente e defina em 1 mês, 100% para mulheres">
+        <div className="overflow-hidden bg-ink py-3" aria-label="+8 mil alunas, perca até 10 kg em 1 mês, treino completo de glúteos e emagrecimento, 100% para mulheres">
           <div className="marquee flex w-max whitespace-nowrap font-display text-lg text-pink" aria-hidden="true">
             <span>{marquee.repeat(3)}</span><span>{marquee.repeat(3)}</span>
           </div>
@@ -281,10 +332,12 @@ function Index() {
             <h2 className="text-4xl md:text-6xl">É PRA <span className="text-pink">VOCÊ</span> SE...</h2>
             <ul className="mt-8 grid gap-4 md:grid-cols-2">
               {[
-                "Você quer aumentar e definir o bumbum",
-                "Quer perder gordura corporal e secar mantendo as curvas",
-                "Cansou de treino solto, sem evolução",
-                "Quer um plano organizado para seguir com constância",
+                "Quer perder até 10 kg em um mês e eliminar a gordura localizada",
+                "Quer secar a barriga e afinar a cintura sem perder o bumbum",
+                "Deseja aumentar, empinar e dar firmeza aos glúteos",
+                "Cansou de dietas malucas e cardios chatos que só te deixam fraca",
+                "Quer um método metabólico que continua queimando gordura mesmo em repouso",
+                "Quer um plano passo a passo comprovado para recuperar sua melhor versão",
               ].map((t) => (
                 <li key={t} className="flex items-center gap-3 rounded-2xl border-2 border-ink bg-card p-4 text-lg font-semibold"><Check />{t}</li>
               ))}
@@ -300,10 +353,10 @@ function Index() {
               <h2 className="text-4xl md:text-6xl">O QUE VOCÊ <span className="text-pink">RECEBE</span></h2>
               <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {[
-                  ["Treino completo de glúteos", "Do aquecimento à finalização, tudo pensado para glúteos.", "M4 18h16M7 18V9m5 9V5m5 13v-6"],
-                  ["Aumentar e definir", "Estímulos certos para ganhar volume e forma.", "M4 16l5-5 4 4 7-7M14 8h6v6"],
-                  ["Feito para mulheres", "Criado para o corpo e a rotina feminina.", "M12 14a5 5 0 100-10 5 5 0 000 10zm0 0v7m-3-3h6"],
-                  ["Perda de gordura corporal", "Não é só para glúteo! Estímulos intensos que aceleram o metabolismo e queimam gordura corporal para secar e desenhar o shape.", "M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z"],
+                  ["Protocolo Perca até 10 kg", "Estímulos metabólicos que aceleram a queima calórica e a perda de gordura acelerada em 30 dias.", "M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z"],
+                  ["Aumentar e empinar", "Estímulos isolados de hipertrofia para ganhar volume e formato sem achatar o glúteo.", "M4 16l5-5 4 4 7-7M14 8h6v6"],
+                  ["Secar mantendo curvas", "Exercícios combinados para derreter a gordura da barriga e cintura preservando o bumbum.", "M4 18h16M7 18V9m5 9V5m5 13v-6"],
+                  ["100% para o corpo feminino", "Metodologia alinhada à fisiologia da mulher para queimar gordura sem desgastar a lombar.", "M12 14a5 5 0 100-10 5 5 0 000 10zm0 0v7m-3-3h6"],
                 ].map(([t, d, icon]) => (
                   <div key={t} className="rounded-3xl border-2 border-cream/20 p-6">
                     <svg viewBox="0 0 24 24" className="h-10 w-10 fill-none stroke-pink" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={icon} /></svg>
@@ -324,19 +377,24 @@ function Index() {
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-6">
               {RESULTADOS.map((item, i) => {
                 const gridSpan =
-                  i < 3
+                  i < 2
+                    ? "lg:col-span-3"
+                    : i < 5
                     ? "lg:col-span-2"
-                    : i === 3
-                    ? "lg:col-span-2 lg:col-start-2"
-                    : "lg:col-span-2";
-                const smSpan = i === 4 ? "sm:col-span-2 sm:max-w-md sm:mx-auto w-full" : "w-full";
+                    : "lg:col-span-3";
+                const smSpan = i === 6 ? "sm:col-span-2 sm:max-w-md sm:mx-auto w-full" : "w-full";
 
                 return (
                   <figure
                     key={i}
                     className={`group overflow-hidden rounded-3xl border-2 border-ink bg-card p-3 shadow-[4px_4px_0_0_#0A0A0A] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#FF2E93] ${gridSpan} ${smSpan}`}
                   >
-                    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-muted">
+                    <div className={`relative ${item.aspect ?? "aspect-[4/5]"} w-full overflow-hidden rounded-2xl bg-muted`}>
+                      {item.badge && (
+                        <span className="absolute top-3 left-3 z-10 rounded-full border border-ink/20 bg-cream/95 px-3 py-1 text-xs font-extrabold text-ink shadow-sm backdrop-blur">
+                          {item.badge}
+                        </span>
+                      )}
                       <img
                         src={item.src}
                         alt={item.alt}
@@ -348,7 +406,7 @@ function Index() {
                 );
               })}
             </div>
-            <p className="mt-6 text-sm">Resultados variam de pessoa para pessoa. Imagens publicadas com autorização das alunas.</p>
+            <p className="mt-6 text-sm">Alunas que perderam gordura corporal, eliminaram medidas e ganharam volume nos glúteos. Resultados variam de pessoa para pessoa.</p>
           </Reveal>
         </section>
 
@@ -397,7 +455,7 @@ function Index() {
             <h2 className="text-center text-4xl md:text-6xl">ESCOLHA SEU <span className="text-pink">PLANO</span></h2>
             <div className="mx-auto mt-5 max-w-2xl text-center">
               <p className="inline-block rounded-2xl border-2 border-pink/60 bg-pink/15 px-5 py-3 text-sm font-extrabold text-cream shadow-[0_0_25px_-5px_color-mix(in_oklab,var(--pink)_40%,transparent)] sm:text-base">
-                🔥 Chega de depender de enchimento, calcinha modeladora e filtro. Treine 12 semanas com foco total e vire a mulher que não precisa esconder nada. Por menos que um cafezinho por dia.
+                🔥 Perca até 10 kg em 1 mês, queime a gordura teimosa e conquiste o bumbum dos seus sonhos. Chega de sofrer com roupas apertadas, calcinhas modeladoras ou vergonha do espelho. Por menos que um cafezinho por dia.
               </p>
             </div>
             <div className="mx-auto mt-12 grid max-w-3xl gap-8 md:grid-cols-2">
@@ -405,12 +463,12 @@ function Index() {
               <div className="card-pop relative flex flex-col rounded-3xl !border-pink bg-cream p-6 text-ink md:order-2">
                 <span className="sticker wobble absolute -top-4 right-4">Mais escolhido</span>
                 <h3 className="text-2xl">Plano anual</h3>
-                <p className="mt-1 text-sm">12 meses de treino completo de glúteos</p>
+                <p className="mt-1 text-sm">12 meses de queima acelerada de gordura e glúteos</p>
                 <div className="mt-4">
                   <p className="font-display text-5xl leading-none">R$ 49,90</p>
                   <p className="mt-2 text-sm font-bold text-ink">ou até 6x de R$ 5,61</p>
                 </div>
-                <p className="mt-3 rounded-xl bg-pink-light p-3 text-sm font-semibold">Só R$ 20 a mais que o trimestral para ter 4x mais tempo de treino</p>
+                <p className="mt-3 rounded-xl bg-pink-light p-3 text-sm font-semibold">Só R$ 20 a mais que o trimestral para ter 4x mais tempo de treino e emagrecimento</p>
                 <ul className="mt-5 flex-1 space-y-2.5">
                   {PLAN_ANUAL_ITEMS.map((t) => (
                     <li key={t} className="in flex items-start gap-2.5 text-sm leading-snug">
@@ -419,12 +477,12 @@ function Index() {
                     </li>
                   ))}
                 </ul>
-                <a href={LINK_ANUAL} target="_blank" rel="noopener noreferrer" className="btn-pink mt-6 w-full text-center">Quero o anual</a>
+                <a href={LINK_ANUAL} target="_blank" rel="noopener noreferrer" className="btn-pink mt-6 w-full text-center">Quero perder gordura e definir</a>
               </div>
               {/* TRIMESTRAL */}
               <div className="flex flex-col rounded-3xl border-2 border-cream/30 p-6 md:order-1">
                 <h3 className="text-2xl">Plano trimestral</h3>
-                <p className="mt-1 text-sm">3 meses de treino completo de glúteos</p>
+                <p className="mt-1 text-sm">3 meses de queima acelerada de gordura e glúteos</p>
                 <div className="mt-4">
                   <p className="font-display text-5xl leading-none">R$ 29,90</p>
                   <p className="mt-2 text-sm font-bold text-cream/90">ou até 4x de R$ 5,42</p>
@@ -460,11 +518,11 @@ function Index() {
           <h2 className="text-4xl md:text-6xl">DÚVIDAS <span className="text-pink">FREQUENTES</span></h2>
           <div className="mt-8 space-y-3">
             {[
-              ["O treino é apenas para glúteos?", "Não! Embora o foco principal seja aumentar e empinar o bumbum, o treino foi projetado com intensidade metabólica para acelerar a queima calórica e a perda de gordura corporal, ajudando a secar e definir o corpo como um todo."],
-              ["Para quem é o BUMBUM PRO MAX?", "Para mulheres que querem aumentar e definir o bumbum e também queimar gordura corporal com um treino completo e organizado."],
-              ["Em quanto tempo vejo resultado?", "O treino foi pensado para 1 mês de evolução, mas cada corpo responde de um jeito. Constância, alimentação e descanso fazem diferença."],
+              ["Consigo mesmo perder até 10 kg em 1 mês?", "Sim! O método combina estímulos metabólicos de alta queima calórica que continuam derretendo gordura corporal mesmo em repouso. Com disciplina e constância na rotina, alunas chegam a eliminar até 10 kg no primeiro mês, desinchando e reduzindo medidas expressivas na cintura e barriga."],
+              ["Se eu emagrecer tanto, não vou perder o bumbum?", "Esse é o grande diferencial do BUMBUM PRO MAX! Treinos genéricos de emagrecimento ou dietas restritivas queimam massa muscular e deixam o bumbum flácido ou murcho. Nossa metodologia foi desenvolvida para acelerar a queima de gordura corporal enquanto isola e estimula o ganho de volume e firmeza nos glúteos."],
+              ["O treino queima gordura no corpo todo?", "Sim! O efeito metabólico queima gordura corporal total — afinando barriga, flancos, costas e braços —, enquanto os exercícios isolados modelam, empinam e aumentam os glúteos."],
               ["Preciso de academia?", "O plano anual inclui treinos completos para academia e também treinos em casa (perfeito para viagens ou dias em que você não puder ir à academia). O plano trimestral é focado no treino de academia + Desafio 21 dias."],
-              ["Qual a diferença entre o trimestral e o anual?", "O trimestral tem 3 meses de acesso e inclui o Desafio 21 dias. O anual tem 12 meses de acesso, inclui o Desafio 21 dias e ainda conta com o Treino em Casa exclusivo para quando você estiver viajando ou sem acesso à academia."],
+              ["Qual a diferença entre o trimestral e o anual?", "O trimestral tem 3 meses de acesso e inclui o Desafio 21 dias. O anual tem 12 meses de acesso, inclui o Desafio 21 dias e ainda conta com o Treino em Casa exclusivo para manter a queima de gordura em qualquer lugar."],
               ["Como recebo o acesso?", "[CONFIRMAR] Após a compra, você recebe o acesso por e-mail."],
               ["Posso treinar com lesão ou condição de saúde?", "Consulte um médico ou profissional de educação física antes de começar."],
             ].map(([q, a]) => (
@@ -482,9 +540,9 @@ function Index() {
         <section className="relative overflow-hidden bg-ink py-20 text-center text-cream">
           <Curve className="pointer-events-none absolute -right-20 -bottom-20 h-80 w-80 opacity-20" />
           <div className="relative mx-auto max-w-[1120px] px-4">
-            <h2 className="text-4xl md:text-7xl">SEU <span className="text-pink">BUMBUM PRO MAX</span> COMEÇA HOJE</h2>
+            <h2 className="text-4xl md:text-7xl">PERCA ATÉ <span className="text-pink">10 KG EM 1 MÊS</span> E TRANSFORME SEU CORPO</h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-cream/90">
-              Menos de R$ 0,19 por dia. Chega de inventar desculpas enquanto as outras evoluem.
+              Elimine a gordura que te incomoda, afine a cintura e conquiste o bumbum empinado e firme que você sempre quis. Menos de R$ 0,19 por dia.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <a href={LINK_ANUAL} target="_blank" rel="noopener noreferrer" className="btn-pink text-center">
